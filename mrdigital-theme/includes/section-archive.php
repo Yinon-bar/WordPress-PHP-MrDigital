@@ -1,5 +1,4 @@
-<?php if (have_posts()) {
-  while (have_posts()) { ?>
+<?php if (have_posts()) : while (have_posts()) { ?>
     <div class="card mb-3">
       <div class="card-body">
         <?php the_post(); ?>
@@ -9,4 +8,4 @@
       </div>
     </div>
 <?php }
-} ?>
+endif; ?>
