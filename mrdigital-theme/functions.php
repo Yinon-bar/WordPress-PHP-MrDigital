@@ -41,6 +41,14 @@ function my_sidebars()
       'after_title' => '</h4>'
     )
   );
+  register_sidebar(
+    array(
+      'name' => 'Blog Side Bar',
+      'id' => 'blog-side-bar',
+      'before_title' => '<h4 class="widget-title">',
+      'after_title' => '</h4>'
+    )
+  );
 }
 
 add_action('widgets_init', 'my_sidebars');
