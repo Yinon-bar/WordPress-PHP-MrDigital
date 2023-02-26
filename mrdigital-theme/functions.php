@@ -10,7 +10,9 @@ function loadScripts()
 
 add_action('wp_enqueue_scripts', 'loadScripts');
 
+// Theme Options
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 // Menus
 register_nav_menus(
@@ -20,3 +22,5 @@ register_nav_menus(
     'mobile-menu' => 'Mobile Menu Location',
   )
 );
+
+// Custom image sizes

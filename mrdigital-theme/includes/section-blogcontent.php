@@ -19,5 +19,7 @@
         <?php echo $category->name ?>
       </a>
 <?php   }
+
+    comments_template();
   }
 } ?>
