@@ -7,17 +7,19 @@
     <?php the_author();
 
     $tags = get_the_tags();
-    foreach ($tags as $tag) { ?>
-      <a href="echo get_tag_link($tag->term_id);" class="badge bg-success">
-        <?php echo $tag->name ?>
-      </a>
-    <?php }
+    if ($tags) { ?>
+      <?php foreach ($tags as $tag) { ?>
+        <a href="echo get_tag_link($tag->term_id);" class="badge bg-success">
+          <?php echo $tag->name ?>
+        </a>
+      <?php }
 
-    $categories = get_the_category();
-    foreach ($categories as $category) { ?>
-      <a href="<?php echo get_category_link($category->term_id); ?>" class="badge bg-primary">
-        <?php echo $category->name ?>
-      </a>
+      $categories = get_the_category();
+      foreach ($categories as $category) { ?>
+        <a href="<?php echo get_category_link($category->term_id); ?>" class="badge bg-primary">
+          <?php echo $category->name ?>
+        </a>
+      <?php } ?>
 <?php   }
 
     comments_template();

@@ -84,6 +84,7 @@ function my_first_taxonomy()
     ),
     'public' => true,
     'hierarchical' => false,
+    'support' => array('title', 'editor', 'thumbnail'),
   );
 
   register_taxonomy('brands',  array('cars'), $args);
