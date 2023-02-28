@@ -57,6 +57,10 @@ add_action('widgets_init', 'my_sidebars');
 function my_first_post_type()
 {
   $args = array(
+    'labels' => array(
+      'name' => 'Cars',
+      'singular_name' => 'Car',
+    ),
     'public' => true,
     'has_archive' => true,
     'support' => array('title', 'editor', 'thumbnail'),
