@@ -61,8 +61,11 @@ function my_first_post_type()
       'name' => 'Cars',
       'singular_name' => 'Car',
     ),
+    'hierarchical' => true,
     'public' => true,
     'has_archive' => true,
+    'menu_icon' => 'dashicons-car',
+
     'support' => array('title', 'editor', 'thumbnail'),
     // 'rewrite' => array('slug' => 'cars'),
 
@@ -71,3 +74,17 @@ function my_first_post_type()
 }
 
 add_action('init', 'my_first_post_type');
+
+function my_first_taxonomy()
+{
+  $args = array(
+    'labels' => array(
+      'name' => 'Brands',
+      'singular_name' => 'Brand',
+    ),
+    'public' => true,
+    'hierarchical' => false,
+  );
+}
+
+add_action('init', 'my_first_taxonomy');
