@@ -52,3 +52,18 @@ function my_sidebars()
 }
 
 add_action('widgets_init', 'my_sidebars');
+
+
+function my_first_post_type()
+{
+  $args = array(
+    'public' => true,
+    'has_archive' => true,
+    'support' => array('title', 'editor', 'thumbnail'),
+    // 'rewrite' => array('slug' => 'cars'),
+
+  );
+  register_post_type('cars', $args);
+}
+
+add_action('init', 'my_first_post_type');
