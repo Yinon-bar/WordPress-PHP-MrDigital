@@ -7,7 +7,7 @@
       )
     ) ?>
   </div>
-  <h1>try2</h1>
+  <h1>try1</h1>
 </footer>
 
 
