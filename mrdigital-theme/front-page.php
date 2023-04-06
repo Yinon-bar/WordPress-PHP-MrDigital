@@ -3,7 +3,7 @@
   <div class="container">
     <?php get_template_part("includes/section", "content") ?>
     <?php get_search_form() ?>
-    <h1>try15</h1>
+    <h1>try14</h1>
   </div>
 </section>
 
