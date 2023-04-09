@@ -3,7 +3,7 @@
   <div class="container">
     <?php get_template_part("includes/section", "content") ?>
     <?php get_search_form() ?>
-    <h2>commit3</h2>
+    <h2>commit2</h2>
   </div>
 </section>
 
