@@ -7,7 +7,7 @@
     <?php get_template_part("includes/section", "archive") ?>
     <?php previous_post_link() ?>
     <?php next_post_link() ?>
-    <h1>test8</h1>
+    <h1>test7</h1>
   </div>
 </div>
 
