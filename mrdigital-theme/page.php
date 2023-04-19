@@ -5,7 +5,7 @@
     <?php if (has_post_thumbnail()) { ?>
       <img src="<?php the_post_thumbnail_url('blog-large') ?>" class="img-fluid mb-3 img-thumbnail">
     <?php  } ?>
-    <h1>try15</h1>
+    <h1>try14</h1>
     <?php get_template_part("includes/section", "content") ?>
   </div>
 </div>
