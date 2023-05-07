@@ -8,7 +8,7 @@
     <?php previous_post_link() ?>
     <?php next_post_link() ?>
   </div>
-  <h1>test3</h1>
+  <h1>test2</h1>
 </div>
 
 
